@@ -5,16 +5,10 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 0;
+  background-color: white;
 `;
 
-export const Button = styled.button`
-  margin: 0 auto;
-  padding: 5px;
-
-  cursor: pointer;
-  border: 2px solid #c9c9c9;
-  background-color: white;
-
-  border-radius: 6px;
-  border: 1 solid;
+export const Item = styled.p`
+  margin-right: 10px;
+  font-size: larger;
 `;

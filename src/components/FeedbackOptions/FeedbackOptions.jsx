@@ -1,22 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import { Container, Button } from './FeedbackOptions.styles';
 export function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
-    <div>
+    <Container>
       {options.map(item => {
         return (
-          <button
+          <Button
             key={item}
             type="button"
             onClick={onLeaveFeedback}
             name={item}
           >
             {item}
-          </button>
+          </Button>
         );
       })}
-    </div>
+    </Container>
   );
 }
 
